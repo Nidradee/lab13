@@ -1,0 +1,32 @@
+<!DOCtype>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div ng-app="myModule">
+	  	<div ng-controller="Random">
+	  		<h1></h1>
+	  		    <ul>
+			    	<li ng-repeat="word in words" >{{word}}</li>
+			    </ul>
+		  
+		    <button ng-click="displayInput()">select at random</button>
+		    	<ul>
+			    	<li ng-repeat="randomWord in randomFun" >{{randomWord.word}}</li>
+			    </ul>
+
+			<button ng-click="displayInput()">select at random phase</button>    
+ 	    </div>
+    </div>
+
+
+
+
+
+<script type="text/javascript" src="lib/jquery-1.11.1.js"></script>
+<script src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lab13.js"></script>
+</body>
+</html>
